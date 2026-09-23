@@ -25,7 +25,7 @@ shadowEnvironment = "shadow"
 filterFile = "filter.rgf"
 
 [environments.Test]
-url = "jdbc:snowflake://VXFRTPN-RV88946.snowflakecomputing.com/?user=STEPHANIEHERR&warehouse=SNOWFLAKE_LEARNING_WH&db=STEPHANIE_TEST&schema=PUBLIC&password=SnowPositive88!"
+url = "jdbc:snowflake://VXFRTPN-RV88946.snowflakecomputing.com/?user=STEPHANIEHERR&warehouse=SNOWFLAKE_LEARNING_WH&db=STEPHANIE_TEST&schema=PUBLIC&JDBC_QUERY_RESULT_FORMAT=JSON"
 
 [environments.Prod]
 url = "jdbc:snowflake://VXFRTPN-RV88946.snowflakecomputing.com/?user=STEPHANIEHERR&warehouse=SNOWFLAKE_LEARNING_WH&db=STEPHANIE_PROD&schema=PUBLIC&password=SnowPositive88!"
