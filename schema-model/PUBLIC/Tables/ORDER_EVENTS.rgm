@@ -1,0 +1,17 @@
+table "PUBLIC"."ORDER_EVENTS" {
+  columns = (
+    column "EVENT_ID" {
+      type = NUMBER(38,0)
+    }
+    column "ORDER_ID" {
+      type = NUMBER(38,0)
+    }
+    column "EVENT_TYPE" {
+      type = VARCHAR(16777216)
+    }
+    column "CREATED_AT" {
+      type = TIMESTAMP_NTZ
+    }
+  )
+}
+

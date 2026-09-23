@@ -1,0 +1,23 @@
+table "PUBLIC"."CUSTOMERS" {
+  columns = (
+    column "CUSTOMER_ID" {
+      type = NUMBER(38,0)
+    }
+    column "CUSTOMER_NAME" {
+      type = VARCHAR(16777216)
+    }
+    column "EMAIL" {
+      type = VARCHAR(16777216)
+    }
+    column "SEGMENT" {
+      type = VARCHAR(16777216)
+    }
+    column "SIGNUP_DATE" {
+      type = DATE
+    }
+    column "IS_ACTIVE" {
+      type = BOOLEAN
+    }
+  )
+}
+
