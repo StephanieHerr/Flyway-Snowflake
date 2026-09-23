@@ -18,6 +18,9 @@ table "PUBLIC"."CUSTOMERS" {
     column "IS_ACTIVE" {
       type = BOOLEAN
     }
+    column "PHONE" {
+      type = VARCHAR(16777216)
+    }
   )
 }
 
