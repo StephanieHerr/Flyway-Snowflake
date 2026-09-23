@@ -1,0 +1,30 @@
+procedure "PUBLIC"."ADD_ORDER_EVENT(NUMBER, NUMBER, VARCHAR)" {
+  returnType = VARCHAR(134217728)
+  body = """
+
+BEGIN
+  INSERT INTO STEPHANIE_DEV.PUBLIC.ORDER_EVENTS (EVENT_ID, ORDER_ID, EVENT_TYPE, CREATED_AT)
+  VALUES (:P_EVENT_ID, :P_ORDER_ID, :P_EVENT_TYPE, CURRENT_TIMESTAMP());
+
+  RETURN 'Order event added';
+END;
+"""
+  parameters = <
+    {
+      name = P_EVENT_ID
+      type = NUMBER(38,0)
+    }
+
+    {
+      name = P_ORDER_ID
+      type = NUMBER(38,0)
+    }
+
+    {
+      name = P_EVENT_TYPE
+      type = VARCHAR
+    }
+
+  >
+}
+

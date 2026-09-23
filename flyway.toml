@@ -9,11 +9,23 @@ mixed = true
 outOfOrder = true
 schemaModelLocation = "schema-model"
 validateMigrationNaming = true
+publishResult = true
+email = "stephanie.herr@red-gate.com"
+token = "2-5WpF69XVWGhpcWtP3lhqbQIruXInbWGShGPs1nP3A_Niw7zwJIP7tNvGa57xZQ-lg2Dlaiw-9NT3VqJJdkG87w"
 
 [flywayDesktop]
+enableMigrations = true
 developmentEnvironment = "development"
 shadowEnvironment = "shadow"
-showDeploymentDecision = true
+
+  [flywayDesktop.generate]
+  undoScripts = true
 
 [redgateCompare]
 filterFile = "filter.rgf"
+
+[environments.Test]
+url = "jdbc:snowflake://VXFRTPN-RV88946.snowflakecomputing.com/?user=STEPHANIEHERR&warehouse=SNOWFLAKE_LEARNING_WH&db=STEPHANIE_TEST&schema=PUBLIC&password=SnowPositive88!"
+
+[environments.Prod]
+url = "jdbc:snowflake://VXFRTPN-RV88946.snowflakecomputing.com/?user=STEPHANIEHERR&warehouse=SNOWFLAKE_LEARNING_WH&db=STEPHANIE_PROD&schema=PUBLIC&password=SnowPositive88!"

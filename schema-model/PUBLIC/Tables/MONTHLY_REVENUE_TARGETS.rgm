@@ -1,0 +1,14 @@
+table "PUBLIC"."MONTHLY_REVENUE_TARGETS" {
+  columns = (
+    column "TARGET_MONTH" {
+      type = DATE
+    }
+    column "SEGMENT" {
+      type = VARCHAR(16777216)
+    }
+    column "TARGET_REVENUE" {
+      type = NUMBER(10,2)
+    }
+  )
+}
+
