@@ -15,6 +15,9 @@ table "PUBLIC"."ORDERS" {
     column "ORDER_TOTAL" {
       type = NUMBER(10,2)
     }
+    column "SHIPPED_DATE" {
+      type = DATE
+    }
   )
 }
 
