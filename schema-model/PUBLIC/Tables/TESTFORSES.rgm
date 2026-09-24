@@ -1,0 +1,8 @@
+table "PUBLIC"."TESTFORSES" {
+  columns = (
+    column "ID" {
+      type = NUMBER(38,0)
+    }
+  )
+}
+
