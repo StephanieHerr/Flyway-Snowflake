@@ -1,6 +1,6 @@
 view "PUBLIC"."CUSTOMER_ORDER_SUMMARY" {
   body = """-
-SELECT
+ SELECT
   c.CUSTOMER_ID,
   c.CUSTOMER_NAME,
   c.SEGMENT,
